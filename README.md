@@ -1,7 +1,7 @@
 # 이미지 분석을 통한 식단 유사도 평가
 한국식 식단 관리 프로그램에 사용될 식단 유사도 평가 모델입니다. 새롭게 입력된 식단 이미지와 유사한 식단 이미지들을 사용자의 과거 식단 이미지들로부터 추출하여 일관성 있는 식단 평가에 도움을 줄 수 있습니다.
 ## Overview
-- **Description** : Custom Tensorflow 2 Object Detection API 와 Tessorflow hub의 image feature vector model를 활용하여 과거 식단 이미지 중 새롭게 입력한 식단과 동일한 식단의 이미지를 유사한 순으로 나열해주는 모델을 개발하였습니다.   
+- **Description** : Custom Tensorflow 2 Object Detection API 와 Tensorflow hub의 image feature vector model를 활용하여 과거 식단 이미지 중 새롭게 입력한 식단과 동일한 식단의 이미지를 유사한 순으로 나열해주는 모델을 개발하였습니다.   
 식단 이미지 데이터를 수집하기 위해, Web-Scraper을 만들어 Pinterest에서 한식 밥상 이미지를 스크래핑하였고, 스크래핑한 이미지들을 바탕으로 Tensorflow 2 Object Detection API를 Retrain하였습니다.   
 Tensorflow hub에서 image feature vector model를 불러와 식단 이미지들 간의 Cosine similarity를 분석하는 함수를 만들었습니다.   
 한식 식단 이미지를 바탕으로 Custom한 Tensorflow 2 Object Detection API와 Cosine similarity 분석을 통해, 식단 이미지를 새롭게 입력하면 이미 입력된 이미지들 중 동일한 식단의 이미지들을 유사한 순으로 출력해줍니다.
