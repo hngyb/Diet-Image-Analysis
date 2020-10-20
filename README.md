@@ -19,7 +19,7 @@ Tensorflow hub에서 image feature vector model를 불러와 식단 이미지들
 - [Image similarity](https://github.com/hngyb/Project/blob/master/Diet-image-analysis/Image-similarity.ipynb)
 - [Overall Colab](https://colab.research.google.com/drive/1rq6bCdX2KkgVKMmwrwdtnO52DTkD4TMD?usp=sharing)
 ## Contents
-### 식단 유사성 판단 기준: 식단일 이루고 있는 음식들의 종류 또는 식품군
+### 식단 유사성 판단 기준: 식단을 이루고 있는 음식들의 종류 또는 식품군
 - 일반적인 식단표를 보면 1)음식 종류 2)총 칼로리 3)재료 4)영양소 등이 명시되어 있다.
 - 음식의 종류를 알면 대략적인 칼로리와, 재료, 영양소 등은 파악이 가능하므로, 식단을 이루고 있는 음식들의 종류 또는 식품군을 파악하는 것이 식단 유사성을 판단하는데 가장 중요할 것으로 본다.
 ### 모델 설계
